@@ -76,7 +76,7 @@ fn main() -> bitcoincore_rpc::Result<()> {
     println!("Trader address: {}", trader_addr);
 
     // Send 20 BTC from Miner to Trader
-    let amount = Amount::from_btc(200.0).map_err(|e| {
+    let amount = Amount::from_btc(20.0).map_err(|e| {
         bitcoincore_rpc::Error::JsonRpc(bitcoincore_rpc::jsonrpc::Error::Rpc(
             bitcoincore_rpc::jsonrpc::error::RpcError {
                 code: -1,
