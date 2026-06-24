@@ -1,6 +1,6 @@
 services:
   bitcoin:
-    image: btcpayserver/bitcoin:24.0.1-1
+    image: docker.io/btcpayserver/bitcoin:24.0.1-1
     environment:
       BITCOIN_NETWORK: regtest
       BITCOIN_EXTRA_ARGS: |
